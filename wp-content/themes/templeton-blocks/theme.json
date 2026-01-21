@@ -48,7 +48,9 @@
 		},
 		"spacing": {
 			"spacingScale": {
-				"steps": 0
+				"theme": {
+					"steps": 0
+				}
 			},
 			"spacingSizes": [
 				{
@@ -90,95 +92,11 @@
 			"dropCap": true,
 			"fontFamilies": [
 				{
-					"fontFace": [
-						{
-							"fontFamily": "Poppins",
-							"fontStyle": "normal",
-							"fontWeight": "300",
-							"src": [
-								"https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2"
-							]
-						},
-						{
-							"fontFamily": "Poppins",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2"
-							]
-						},
-						{
-							"fontFamily": "Poppins",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"src": [
-								"https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2"
-							]
-						},
-						{
-							"fontFamily": "Poppins",
-							"fontStyle": "normal",
-							"fontWeight": "600",
-							"src": [
-								"https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2"
-							]
-						},
-						{
-							"fontFamily": "Poppins",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": [
-								"https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2"
-							]
-						}
-					],
 					"fontFamily": "Poppins, sans-serif",
 					"name": "Poppins",
 					"slug": "poppins"
 				},
 				{
-					"fontFace": [
-						{
-							"fontFamily": "Open Sans",
-							"fontStyle": "normal",
-							"fontWeight": "300",
-							"src": [
-								"https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.woff2"
-							]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.woff2"
-							]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"src": [
-								"https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0B4gaVc.woff2"
-							]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontStyle": "normal",
-							"fontWeight": "600",
-							"src": [
-								"https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.woff2"
-							]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": [
-								"https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsge1x4gaVc.woff2"
-							]
-						}
-					],
 					"fontFamily": "Open Sans, sans-serif",
 					"name": "Open Sans",
 					"slug": "open-sans"
@@ -275,24 +193,6 @@
 	},
 	"styles": {
 		"blocks": {
-			"core/group": {
-				"variations": {
-					"section-padding": {
-						"spacing": {
-							"padding": {
-								"top": "var(--wp--preset--spacing--70)",
-								"bottom": "var(--wp--preset--spacing--70)",
-								"left": "var(--wp--preset--spacing--40)",
-								"right": "var(--wp--preset--spacing--40)"
-							},
-							"margin": {
-								"top": "0",
-								"bottom": "0"
-							}
-						}
-					}
-				}
-			},
 			"core/heading": {
 				"spacing": {
 					"margin": {
