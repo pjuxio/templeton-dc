@@ -1,0 +1,345 @@
+/*
+Theme Name: Templeton Blocks
+Theme URI: 
+Author: PJUX.io
+Author URI: 
+Description: Block Theme for Templeton Acdemy
+Requires at least: 6.9
+Tested up to: 6.9
+Requires PHP: 5.7
+Version: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: templeton-blocks
+Tags: 
+*/
+
+/* Header Navigation Button */
+header .wp-block-button .wp-block-button__link {
+	background-color: #ffbb22 !important;
+	color: #000 !important;
+	padding: 0.75rem 1.5rem !important;
+	font-weight: 600 !important;
+	font-family: var(--wp--preset--font-family--poppins) !important;
+	font-size: var(--wp--preset--font-size--medium) !important;
+	border-radius: 50px !important;
+}
+
+header .wp-block-button .wp-block-button__link:hover {
+	background-color: #ffcc44 !important;
+}
+
+/* Remove default blockquote margin */
+.wp-block-quote {
+	margin-inline-start: 0 !important;
+	margin-inline-end: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	text-align: left;
+}
+
+/* Remove bullets from plain style lists */
+ul.is-style-plain {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+ul.is-style-plain li {
+	margin-bottom: 1rem;
+}
+
+/* Center testimonial blockquotes */
+.wp-block-cover .wp-block-quote.is-style-plain {
+	text-align: center;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+/* Center custom testimonial blockquotes */
+.wp-block-cover .wp-block-quote.testimonial-quote {
+	text-align: center !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-inline-start: auto !important;
+	margin-inline-end: auto !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	max-width: 900px !important;
+	display: block !important;
+}
+
+/* Remove footer spacing issues */
+footer,
+.wp-block-template-part {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+/* Section Spacing Utilities */
+.wp-block-group.alignfull {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.section-padding {
+	padding: 5rem 2rem;
+}
+
+/* Typography Patterns */
+.large-heading {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.medium-heading {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.small-heading {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.quote-text {
+	font-size: 1.5rem;
+	line-height: 1.6;
+}
+
+.body-large {
+	font-size: 1.125rem;
+}
+
+.label-text {
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+/* Button Styles */
+.wp-block-button__link {
+	border-radius: 50px;
+	padding: 0.75rem 1.5rem;
+	font-weight: 600;
+	font-family: var(--wp--preset--font-family--poppins);
+	font-size: var(--wp--preset--font-size--medium);
+}
+
+/* Button Color Variants */
+.wp-block-button.is-style-teal .wp-block-button__link,
+.button-teal .wp-block-button__link {
+	background-color: #018e75 !important;
+	color: #fff !important;
+}
+
+.wp-block-button.is-style-teal .wp-block-button__link:hover,
+.button-teal .wp-block-button__link:hover {
+	background-color: #016d5c !important;
+}
+
+.wp-block-button.is-style-purple .wp-block-button__link,
+.button-purple .wp-block-button__link {
+	background-color: #832e92 !important;
+	color: #fff !important;
+}
+
+.wp-block-button.is-style-purple .wp-block-button__link:hover,
+.button-purple .wp-block-button__link:hover {
+	background-color: #6b2579 !important;
+}
+
+.wp-block-button.is-style-white .wp-block-button__link,
+.button-white .wp-block-button__link {
+	background-color: #fff !important;
+	color: #000 !important;
+}
+
+.wp-block-button.is-style-white .wp-block-button__link:hover,
+.button-white .wp-block-button__link:hover {
+	background-color: #f0f0f0 !important;
+}
+
+.wp-block-button.is-style-yellow .wp-block-button__link,
+.button-yellow .wp-block-button__link {
+	background-color: #ffbb22 !important;
+	color: #000 !important;
+}
+
+.wp-block-button.is-style-yellow .wp-block-button__link:hover,
+.button-yellow .wp-block-button__link:hover {
+	background-color: #ffcc44 !important;
+}
+
+/* Cover Block Heights */
+.cover-full-height {
+	min-height: 100vh;
+}
+
+.cover-large {
+	min-height: 600px;
+}
+
+.cover-medium {
+	min-height: 400px;
+}
+
+/* Column Padding Patterns */
+.column-padding-large {
+	padding: 5rem 3rem;
+}
+
+.column-padding-standard {
+	padding: 5rem 2rem;
+}
+
+/* Spacing Utilities */
+.mb-1 {
+	margin-bottom: 1rem !important;
+}
+
+.mb-1-5 {
+	margin-bottom: 1.5rem !important;
+}
+
+.mb-2 {
+	margin-bottom: 2rem !important;
+}
+
+.mb-3 {
+	margin-bottom: 3rem !important;
+}
+
+.mt-1-5 {
+	margin-top: 1.5rem !important;
+}
+
+.m-0 {
+	margin: 0 !important;
+}
+
+/* Line Height Utilities */
+.lh-tight {
+	line-height: 1 !important;
+}
+
+.lh-normal {
+	line-height: 1.5 !important;
+}
+
+.lh-relaxed {
+	line-height: 1.6 !important;
+}
+
+.lh-loose {
+	line-height: 1.7 !important;
+}
+
+/* Zero Spacing Utilities */
+.p-0 {
+	padding: 0 !important;
+}
+
+.no-spacing,
+.wp-block-cover.no-spacing {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.wp-block-cover.no-spacing > .wp-block-cover__inner-container {
+	padding: 0 !important;
+}
+
+/* Background Color Utilities */
+.bg-blue {
+	background-color: #455be2 !important;
+}
+
+.bg-purple {
+	background-color: #832e92 !important;
+}
+
+.bg-teal {
+	background-color: #018e75 !important;
+}
+
+.bg-dark {
+	background-color: #262626 !important;
+}
+
+.bg-pink {
+	background-color: #f6b6e9 !important;
+}
+
+.bg-white {
+	background-color: #ffffff !important;
+}
+
+/* Section Padding Utilities */
+.section-padding-standard {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding: 5rem 2rem !important;
+}
+
+.section-padding-large {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding: 5rem 3rem !important;
+}
+
+/* Column/Container Zero Spacing */
+.no-gap {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding: 0 !important;
+}
+
+/* Reverse column order on mobile */
+@media (max-width: 781px) {
+	.is-reverse-mobile {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+/* Responsive header styling */
+@media (max-width: 781px) {
+	/* Reduce header padding on mobile */
+	.header-wrapper {
+		padding: 1rem !important;
+	}
+	
+	/* Make header flex wrap and center content */
+	.header-inner {
+		gap: 1rem !important;
+		justify-content: center !important;
+	}
+	
+	/* Reduce logo size on mobile */
+	.header-logo img {
+		width: 150px !important;
+		max-width: 150px !important;
+	}
+	
+	/* Adjust nav group spacing */
+	.header-nav-group {
+		gap: 1rem !important;
+		flex-wrap: wrap !important;
+		justify-content: center !important;
+	}
+}
+
+@media (max-width: 480px) {
+	/* Further reduce logo on small mobile */
+	.header-logo img {
+		width: 120px !important;
+		max-width: 120px !important;
+	}
+	
+	/* Make button smaller on mobile */
+	header .wp-block-button .wp-block-button__link {
+		padding: 0.6rem 1rem !important;
+		font-size: 0.9rem !important;
+	}
+}

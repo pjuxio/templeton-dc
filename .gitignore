@@ -1,0 +1,69 @@
+# WordPress Core Files
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/readme.html
+/license.txt
+index.php
+local-xdebuginfo.php
+
+# WordPress Config
+wp-config.php
+wp-config-local.php
+wp-config-sample.php
+
+# Uploads and Media
+/wp-content/uploads/
+
+# Other wp-content folders
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/backup*/
+/wp-content/backups/
+/wp-content/blogs.dir/
+/wp-content/mu-plugins/
+
+# Keep only your custom theme
+# /wp-content/themes/* should be tracked except the custom theme
+# Actually, let's track the themes directory but ignore the default ones
+/wp-content/themes/twenty*/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+error_log
+access_log
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# htaccess (can be environment-specific)
+.htaccess
