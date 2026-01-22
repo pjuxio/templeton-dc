@@ -29,13 +29,25 @@ header .wp-block-button .wp-block-button__link:hover {
 	background-color: #ffcc44 !important;
 }
 
-/* Remove default blockquote margin */
+/* Default blockquote styling for blog posts */
 .wp-block-quote {
-	margin-inline-start: 0 !important;
-	margin-inline-end: 0 !important;
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-	text-align: left;
+	margin: 2rem 0;
+	padding-left: 2rem;
+	border-left: 4px solid #832e92;
+	font-style: italic;
+	color: #262626;
+}
+
+.wp-block-quote p {
+	margin-bottom: 0.5rem;
+}
+
+.wp-block-quote cite {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.9em;
+	display: block;
+	margin-top: 1rem;
 }
 
 /* Remove bullets from plain style lists */
@@ -53,6 +65,9 @@ ul.is-style-plain li {
 	text-align: center;
 	margin-left: auto !important;
 	margin-right: auto !important;
+	border-left: none !important;
+	padding-left: 0 !important;
+	font-style: normal !important;
 }
 
 /* Center custom testimonial blockquotes */
@@ -66,6 +81,17 @@ ul.is-style-plain li {
 	margin-bottom: 0 !important;
 	max-width: 900px !important;
 	display: block !important;
+	border-left: none !important;
+	padding-left: 0 !important;
+	font-style: normal !important;
+}
+
+/* Homepage blockquote - no left spacing */
+.wp-block-quote.homepage-quote {
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+	border-left: none !important;
+	font-style: normal !important;
 }
 
 /* Remove footer spacing issues */
@@ -301,6 +327,35 @@ footer,
 		display: flex;
 		flex-direction: column-reverse;
 	}
+}
+
+/* Iframe Loading Spinner */
+.iframe-container {
+	position: relative;
+	min-height: 600px;
+}
+
+.iframe-spinner {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 50px;
+	border: 4px solid #f3f3f3;
+	border-top: 4px solid #455be2;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	z-index: 1;
+}
+
+.iframe-spinner.hidden {
+	display: none;
+}
+
+@keyframes spin {
+	0% { transform: translateX(-50%) rotate(0deg); }
+	100% { transform: translateX(-50%) rotate(360deg); }
 }
 
 /* Responsive header styling */
