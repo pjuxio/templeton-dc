@@ -41,6 +41,17 @@ Tags:
 	aspect-ratio: 16 / 9;
 }
 
+/* Header Navigation Links */
+header .wp-block-navigation a {
+	text-decoration: none;
+	transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+header .wp-block-navigation a:hover {
+	color: #ffbb22 !important;
+	opacity: 0.9;
+}
+
 /* Header Navigation Button */
 header .wp-block-button .wp-block-button__link {
 	background-color: #ffbb22 !important;
