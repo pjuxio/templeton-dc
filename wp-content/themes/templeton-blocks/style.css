@@ -14,6 +14,33 @@ Text Domain: templeton-blocks
 Tags: 
 */
 
+/* Video Embed Spacing Fix */
+.wp-block-embed.is-type-video {
+	margin-top: 0 !important;
+}
+
+.wp-block-embed.is-type-video figure {
+	margin-top: 0 !important;
+	margin-bottom: 2rem !important;
+}
+
+/* Remove the ::before pseudo-element that creates extra space */
+.wp-block-embed__wrapper::before {
+	display: none !important;
+}
+
+/* Ensure the iframe takes proper space */
+.wp-block-embed__wrapper {
+	position: relative;
+	padding-bottom: 0 !important;
+}
+
+.wp-block-embed__wrapper iframe {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+}
+
 /* Header Navigation Button */
 header .wp-block-button .wp-block-button__link {
 	background-color: #ffbb22 !important;
