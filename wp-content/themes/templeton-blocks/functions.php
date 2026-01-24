@@ -3,11 +3,12 @@
  * Templeton Blocks functions and definitions
  */
 
-// Enqueue Google Fonts
+// Enqueue Adobe Fonts
 function templeton_blocks_enqueue_fonts() {
+    // Enqueue Adobe Fonts (Typekit)
     wp_enqueue_style(
-        'templeton-blocks-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap',
+        'templeton-blocks-adobe-fonts',
+        'https://use.typekit.net/lby7ohq.css',
         array(),
         null
     );
@@ -58,3 +59,9 @@ function templeton_blocks_iframe_spinner() {
     <?php
 }
 add_action( 'wp_footer', 'templeton_blocks_iframe_spinner' );
+
+// Current year shortcode
+function templeton_blocks_current_year() {
+    return date('Y');
+}
+add_shortcode( 'year', 'templeton_blocks_current_year' );

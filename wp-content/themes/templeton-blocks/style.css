@@ -1,27 +1,53 @@
 /*
 Theme Name: Templeton Blocks
-Theme URI: 
+Theme URI: https://templetonacademy.org
 Author: PJUX.io
-Author URI: 
-Description: Block Theme for Templeton Acdemy
+Author URI: https://pjux.io
+Description: Block Theme for Templeton Academy
 Requires at least: 6.9
 Tested up to: 6.9
 Requires PHP: 5.7
-Version: 
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: templeton-blocks
-Tags: 
+Tags: block-theme, education, full-site-editing, custom-colors, custom-fonts, school, academy, block-patterns
 */
 
 /* Video Embed Spacing Fix */
 .wp-block-embed.is-type-video {
 	margin-top: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 .wp-block-embed.is-type-video figure {
-	margin-top: 0 !important;
-	margin-bottom: 2rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Video in column - edge to edge */
+.wp-block-column .wp-block-embed.is-type-video {
+	margin: 0 !important;
+}
+
+.wp-block-column .wp-block-embed.is-type-video figure {
+	margin: 0 !important;
+}
+
+/* Force full-width video embed - remove all padding/margins */
+.wp-block-embed.alignfull {
+	width: 100vw !important;
+	max-width: 100vw !important;
+	margin-left: calc(50% - 50vw) !important;
+	margin-right: calc(50% - 50vw) !important;
+	padding: 0 !important;
+}
+
+.wp-block-embed.alignfull figure {
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 /* Remove the ::before pseudo-element that creates extra space */
@@ -33,12 +59,14 @@ Tags:
 .wp-block-embed__wrapper {
 	position: relative;
 	padding-bottom: 0 !important;
+	margin: 0 !important;
 }
 
 .wp-block-embed__wrapper iframe {
 	width: 100%;
 	height: auto;
 	aspect-ratio: 16 / 9;
+	display: block;
 }
 
 /* Header Navigation Links */
@@ -48,23 +76,83 @@ header .wp-block-navigation a {
 }
 
 header .wp-block-navigation a:hover {
-	color: #ffbb22 !important;
+	color: #ffb32c !important;
 	opacity: 0.9;
 }
 
 /* Header Navigation Button */
 header .wp-block-button .wp-block-button__link {
-	background-color: #ffbb22 !important;
+	background-color: #ffb32c !important;
 	color: #000 !important;
 	padding: 0.75rem 1.5rem !important;
-	font-weight: 600 !important;
-	font-family: var(--wp--preset--font-family--poppins) !important;
+	font-weight: 700 !important;
+	font-family: var(--wp--preset--font-family--nexa) !important;
 	font-size: var(--wp--preset--font-size--medium) !important;
 	border-radius: 50px !important;
 }
 
 header .wp-block-button .wp-block-button__link:hover {
-	background-color: #ffcc44 !important;
+	background-color: #ffc04a !important;
+}
+
+/* White button with blue text - hover to yellow */
+.wp-block-button__link.has-white-background-color.has-primary-blue-color {
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wp-block-button__link.has-white-background-color.has-primary-blue-color:hover {
+	background-color: #ffb32c !important;
+	color: #000 !important;
+}
+
+/* White button with purple text - hover to light cyan */
+.wp-block-button__link.has-white-background-color.has-primary-purple-color {
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wp-block-button__link.has-white-background-color.has-primary-purple-color:hover {
+	background-color: #78e1e8 !important;
+	color: #262626 !important;
+}
+
+/* White button with teal text - hover to light pink */
+.wp-block-button__link.has-white-background-color.has-primary-teal-color {
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wp-block-button__link.has-white-background-color.has-primary-teal-color:hover {
+	background-color: #ff8ad2 !important;
+	color: #262626 !important;
+}
+
+/* White button with coral-red text - hover to yellow */
+.wp-block-button__link.has-white-background-color.has-coral-red-color {
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wp-block-button__link.has-white-background-color.has-coral-red-color:hover {
+	background-color: #ffb32c !important;
+	color: #000 !important;
+}
+
+/* White button with tan text - hover to yellow */
+.wp-block-button__link.has-white-background-color.has-tan-color {
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wp-block-button__link.has-white-background-color.has-tan-color:hover {
+	background-color: #ffb32c !important;
+	color: #000 !important;
+}
+
+/* White button with dark-gray text - hover to primary purple */
+.wp-block-button__link.has-white-background-color.has-dark-gray-color {
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wp-block-button__link.has-white-background-color.has-dark-gray-color:hover {
+	background-color: #822f91 !important;
+	color: #ffffff !important;
 }
 
 /* Default blockquote styling for blog posts */
@@ -105,11 +193,11 @@ ul.is-style-plain li {
 	margin-right: auto !important;
 	border-left: none !important;
 	padding-left: 0 !important;
-	font-style: normal !important;
+	font-style: normal;
 }
 
 /* Center custom testimonial blockquotes */
-.wp-block-cover .wp-block-quote.testimonial-quote {
+.wp-block-quote.testimonial-quote {
 	text-align: center !important;
 	margin-left: auto !important;
 	margin-right: auto !important;
@@ -118,10 +206,10 @@ ul.is-style-plain li {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 	max-width: 900px !important;
-	display: block !important;
+	display: block;
 	border-left: none !important;
 	padding-left: 0 !important;
-	font-style: normal !important;
+	font-style: normal;
 }
 
 /* Homepage blockquote - no left spacing */
@@ -129,7 +217,13 @@ ul.is-style-plain li {
 	padding-left: 0 !important;
 	margin-left: 0 !important;
 	border-left: none !important;
-	font-style: normal !important;
+	font-style: normal;
+}
+
+/* Mr. Foster quote section button hover */
+.homepage-quote + .wp-block-spacer + .wp-block-buttons .wp-block-button__link:hover {
+	background-color: #78e1e8 !important;
+	color: #018e75 !important;
 }
 
 /* Remove footer spacing issues */
@@ -185,8 +279,8 @@ footer,
 .wp-block-button__link {
 	border-radius: 50px;
 	padding: 0.75rem 1.5rem;
-	font-weight: 600;
-	font-family: var(--wp--preset--font-family--poppins);
+	font-weight: 700;
+	font-family: var(--wp--preset--font-family--nexa);
 	font-size: var(--wp--preset--font-size--medium);
 }
 
@@ -226,13 +320,13 @@ footer,
 
 .wp-block-button.is-style-yellow .wp-block-button__link,
 .button-yellow .wp-block-button__link {
-	background-color: #ffbb22 !important;
+	background-color: #ffb32c !important;
 	color: #000 !important;
 }
 
 .wp-block-button.is-style-yellow .wp-block-button__link:hover,
 .button-yellow .wp-block-button__link:hover {
-	background-color: #ffcc44 !important;
+	background-color: #ffc04a !important;
 }
 
 /* Cover Block Heights */
@@ -284,24 +378,24 @@ footer,
 
 /* Line Height Utilities */
 .lh-tight {
-	line-height: 1 !important;
+	line-height: 1;
 }
 
 .lh-normal {
-	line-height: 1.5 !important;
+	line-height: 1.5;
 }
 
 .lh-relaxed {
-	line-height: 1.6 !important;
+	line-height: 1.6;
 }
 
 .lh-loose {
-	line-height: 1.7 !important;
+	line-height: 1.7;
 }
 
 /* Zero Spacing Utilities */
 .p-0 {
-	padding: 0 !important;
+	padding: 0;
 }
 
 .no-spacing,
@@ -311,7 +405,7 @@ footer,
 }
 
 .wp-block-cover.no-spacing > .wp-block-cover__inner-container {
-	padding: 0 !important;
+	padding: 0;
 }
 
 /* Background Color Utilities */
@@ -420,6 +514,17 @@ footer,
 		gap: 1rem !important;
 		flex-wrap: wrap !important;
 		justify-content: center !important;
+	}
+}
+
+/* Force mobile navigation menu on medium and small screens */
+@media (max-width: 1024px) {
+	.wp-block-navigation__responsive-container:not(.is-menu-open) {
+		display: none !important;
+	}
+	
+	.wp-block-navigation__responsive-container-open {
+		display: flex !important;
 	}
 }
 

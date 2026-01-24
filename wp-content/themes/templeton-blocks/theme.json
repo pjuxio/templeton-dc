@@ -11,7 +11,7 @@
 					"slug": "primary-blue"
 				},
 				{
-					"color": "#832e92",
+					"color": "#822f91",
 					"name": "Primary Purple",
 					"slug": "primary-purple"
 				},
@@ -26,9 +26,34 @@
 					"slug": "dark-gray"
 				},
 				{
-					"color": "#f6b6e9",
+					"color": "#ff8ad2",
 					"name": "Light Pink",
 					"slug": "light-pink"
+				},
+				{
+					"color": "#ffb32c",
+					"name": "Yellow",
+					"slug": "yellow"
+				},
+				{
+					"color": "#78e1e8",
+					"name": "Light Cyan",
+					"slug": "light-cyan"
+				},
+				{
+					"color": "#eadbde",
+					"name": "Beige",
+					"slug": "beige"
+				},
+				{
+					"color": "#f55657",
+					"name": "Coral Red",
+					"slug": "coral-red"
+				},
+				{
+					"color": "#d1956b",
+					"name": "Tan",
+					"slug": "tan"
 				},
 				{
 					"color": "#ffffff",
@@ -92,14 +117,14 @@
 			"dropCap": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "Poppins, sans-serif",
-					"name": "Poppins",
-					"slug": "poppins"
+					"fontFamily": "\"nexa\", sans-serif",
+					"name": "Nexa",
+					"slug": "nexa"
 				},
 				{
-					"fontFamily": "Open Sans, sans-serif",
-					"name": "Open Sans",
-					"slug": "open-sans"
+					"fontFamily": "\"nexa-text\", sans-serif",
+					"name": "Nexa Text",
+					"slug": "nexa-text"
 				},
 				{
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
@@ -243,8 +268,8 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--poppins)",
-					"fontWeight": "600",
+					"fontFamily": "var(--wp--preset--font-family--nexa)",
+					"fontWeight": "700",
 					"lineHeight": "1.2"
 				}
 			},
@@ -260,7 +285,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--open-sans)",
+			"fontFamily": "var(--wp--preset--font-family--nexa-text)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"lineHeight": "1.6"
 		}
